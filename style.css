@@ -133,7 +133,6 @@ body {
 /* Tablet and smaller screens */
 @media (max-width: 600px) {
     .nums {
-        height: 65px;
         font-size: 2rem;
 
         box-shadow: none;
@@ -144,6 +143,26 @@ body {
     }
 }
 
+/* 550 px screens*/
+
+@media (max-width: 550px){
+    .nums {
+        min-height: 12vh;
+        height: 50px;
+        
+    }
+}
+
+/* 500 px screens*/
+
+@media (max-width: 500px){
+    .nums {
+        min-height: 10vh;
+        height: 50px;
+        
+    }
+}
+
 /* Mobile screens */
 @media (max-width: 400px) {
     #wrapper {
@@ -151,6 +170,7 @@ body {
         padding: 0.75rem;
     }
     .nums {
+        min-height: 8vh;
         height: 50px;
         font-size: 1.5rem;
         border: 3px solid rgb(255, 255, 255);
@@ -170,14 +190,24 @@ body {
 
 /* Very small screens */
 @media (max-width: 320px) {
+    #wrapper {
+        min-height: 40vh;
+        max-width: 100%;
+        padding: 0.75rem;
+    }
     .nums {
         height: 50px;
+        min-height: 5vh;
         font-size: 1.2rem;
     }
     #input-box {
         font-size: 1.5rem;
         min-height: 50px;
         height: 50px;
+    }
+
+    #equal {
+        font-size: 1.5rem;
     }
 }
 
