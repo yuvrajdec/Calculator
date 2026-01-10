@@ -34,7 +34,7 @@ body {
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
-
+    border-radius: 5px;
     overflow: hidden;
 }
 #input-box {
@@ -49,6 +49,8 @@ body {
     overflow-x: auto;
     white-space: nowrap;
     box-sizing: border-box;
+
+    border-radius: 5px ;
 }
 #input-box:hover {
     background-color: rgb(233, 233, 233);
@@ -82,8 +84,9 @@ body {
     color: white;
 }
 .nums {
-    height: 100px;
     width: 100%;
+
+    aspect-ratio: 1/1;
 
     max-width: 100%;
     min-height: 48px;
@@ -97,6 +100,8 @@ body {
 
     touch-action: manipulation;
     user-select: none;
+
+    transition: transform 0.05s ease;
 }
 #equal {
     background-color: rgb(119, 255, 0);
@@ -142,6 +147,7 @@ body {
 /* Mobile screens */
 @media (max-width: 400px) {
     #wrapper {
+        max-width: 100%;
         padding: 0.75rem;
     }
     .nums {
@@ -165,7 +171,7 @@ body {
 /* Very small screens */
 @media (max-width: 320px) {
     .nums {
-        height: 45px;
+        height: 50px;
         font-size: 1.2rem;
     }
     #input-box {
